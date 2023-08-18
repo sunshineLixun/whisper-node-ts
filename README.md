@@ -5,8 +5,7 @@
 
 Node.js bindings for OpenAI's Whisper.
 
-
-Base on [whisper-node](https://github.com/ariym/whisper-node) 
+Base on [whisper-node](https://github.com/ariym/whisper-node)
 
 ## Features
 
