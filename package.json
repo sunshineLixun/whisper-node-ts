@@ -1,0 +1,63 @@
+{
+  "name": "whisper-node-ts",
+  "version": "0.0.2",
+  "description": "Node bindings for OpenAI's Whisper. Optimized for CPU.",
+  "homepage": "https://npmjs.com/whisper-node-ts",
+  "author": "sunshineLixun",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "download": "dist/download.js"
+  },
+  "scripts": {
+    "start": "echo Starting with: npm run dev... && npm run dev",
+    "dev": "NODE_ENV='development' nodemon --watch './**/*.ts' --exec 'ts-node' src/test.ts",
+    "build": "npx tsc && chmod +x dist/download.js",
+    "test": "node dist/test.js",
+    "lint": "eslint . --ext .js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix",
+    "format": "prettier --write .",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm run lint",
+    "preversion": "npm run lint",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.13",
+    "@typescript-eslint/eslint-plugin": "^6.4.0",
+    "@typescript-eslint/parser": "^6.4.0",
+    "eslint": "^8.47.0",
+    "nodemon": "^2.0.20",
+    "prettier": "^3.0.2",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.3"
+  },
+  "dependencies": {
+    "@types/readline-sync": "^1.4.4",
+    "@types/shelljs": "^0.8.12",
+    "readline-sync": "^1.4.10",
+    "shelljs": "^0.8.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sunshineLixun/whisper-node-ts"
+  },
+  "license": "MIT",
+  "keywords": [
+    "OpenAI",
+    "Whisper",
+    "CPP",
+    "C++",
+    "Whisper",
+    "Bindings",
+    "Transcript",
+    "Transcriber",
+    "Audio",
+    "Speech",
+    "Speech-to-Text",
+    "STT",
+    "TTS",
+    "SRT",
+    "diarization"
+  ]
+}
