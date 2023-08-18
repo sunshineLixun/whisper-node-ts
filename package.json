@@ -9,6 +9,10 @@
   "bin": {
     "download": "dist/download.js"
   },
+  "files": [
+    "dist",
+    "lib"
+  ],
   "scripts": {
     "start": "echo Starting with: npm run dev... && npm run dev",
     "dev": "NODE_ENV='development' nodemon --watch './**/*.ts' --exec 'ts-node' src/test.ts",
