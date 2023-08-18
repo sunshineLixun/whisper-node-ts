@@ -1,6 +1,6 @@
 {
   "name": "whisper-node-ts",
-  "version": "0.0.6",
+  "version": "0.0.5",
   "description": "Node bindings for OpenAI's Whisper. Optimized for CPU.",
   "homepage": "https://npmjs.com/whisper-node-ts",
   "author": "sunshineLixun",
@@ -9,6 +9,9 @@
   "bin": {
     "download": "dist/download.js"
   },
+  "files": [
+    "lib"
+  ],
   "scripts": {
     "start": "echo Starting with: npm run dev... && npm run dev",
     "dev": "NODE_ENV='development' nodemon --watch './**/*.ts' --exec 'ts-node' src/test.ts",
