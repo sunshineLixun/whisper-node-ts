@@ -1,6 +1,6 @@
 {
   "name": "whisper-node-ts",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Node bindings for OpenAI's Whisper. Optimized for CPU.",
   "homepage": "https://npmjs.com/whisper-node-ts",
   "author": "sunshineLixun",
@@ -18,7 +18,7 @@
     "build": "npx tsc && chmod +x dist/download.js",
     "test": "node dist/test.js",
     "lint": "eslint src/ --ext .js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix",
-    "format": "prettier --write src/**/*{.ts}",
+    "format": "prettier --write src/*{.ts}",
     "prepare": "npm run build",
     "prepublishOnly": "npm run lint",
     "preversion": "npm run lint",
